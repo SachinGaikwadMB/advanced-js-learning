@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance In JavaScripts</title>
+</head>
+<body>
+    <script>
+        class Car {
+          
+            constructor(color, seats, isAcAvailable, price) {
+                this.color = color;
+                this.seats = seats;
+                this.isAcAvailable = isAcAvailable;
+                this.price = price;
+            }
+
+            showDetails() {
+                return `Car has this features :  ${this.color}  ${this.seats}  ${this.isAcAvailable} ${this.price}`
+            }
+        }
+
+        class Swift extends Car {
+            constructor(color, seats, isAcAvailable, price, description) {
+                super(color, seats, isAcAvailable, price);
+                this.description = description
+            }
+
+            showDetails() {
+                return `Car has this features :  ${this.color}  ${this.seats}  ${this.isAcAvailable} ${this.price} ${this.description}}`
+            }
+        }
+
+        let car = new Swift('white', 5, true, 'fivelakh', 'bestcar');
+        console.log(car.showDetails());
+    </script>
+</body>
+</html>

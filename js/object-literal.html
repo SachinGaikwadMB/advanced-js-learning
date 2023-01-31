@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literal</title>
+</head>
+<body>
+    <script>
+        let firstName = 'sachin';
+        let lastName = 'gaikwad';
+
+        /*
+        old way to define object literal
+
+        var obj = {
+            'firstName' : firstName,
+            'lastName' : lastName
+        };
+        */
+
+        //new way in ECMA6
+        var obj = {
+            firstName,
+            lastName
+        }
+
+        console.log(obj);
+
+    </script>
+</body>
+</html>

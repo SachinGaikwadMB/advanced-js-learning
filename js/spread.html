@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operators</title>
+</head>
+<body>
+        <script>
+            var arr = [10, 20, 30 , 40, 50];
+
+            console.log('Original Array : ' + arr);
+
+            console.log('Array using spread operators : ');
+            console.log(...arr);
+
+            console.log('Back to array : ' + [...arr]);
+
+
+            var obj1 = {
+                'firtName' : 'sachin'
+            };
+
+            var obj2 = {
+                'lastName': 'gaikwad'
+            };
+
+            var obj3 = {...obj1, ...obj2};
+            console.log(obj3);
+
+        </script>
+</body>
+</html>
